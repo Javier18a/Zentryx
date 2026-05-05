@@ -1,0 +1,204 @@
+.servicios-page {
+    padding: 80px 20px;
+    color: #fff;
+}
+
+.servicios-page h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.intro {
+    text-align: center;
+    color: #b3b3b3;
+    margin-bottom: 30px;
+}
+
+/* Buscador */
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+/* Filtros */
+.filtros {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.filtros button {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filtros button:hover,
+.filtros .active {
+    background: #4da3ff;
+    border-color: #4da3ff;
+}
+
+/* Grid */
+.grid-servicios {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+/* Card */
+.card {
+    background: #0f172a;
+    padding: 20px;
+    width: 260px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #b3b3b3;
+    margin-bottom: 10px;
+}
+
+/* Categoría */
+.categoria {
+    display: inline-block;
+    font-size: 0.75rem;
+    color: #4da3ff;
+    margin-bottom: 10px;
+}
+
+/* Botón */
+.card button {
+    margin: 5px;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    border: 1px solid #4da3ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: linear-gradient(145deg, #111, #1a1a1a);
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    color: #fff;
+    position: relative;
+}
+
+.modal-content h2 {
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    color: #b3b3b3;
+    margin-bottom: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.modal-content button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+
+    
+    main{
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .servicios-page {
+        margin: 30px;
+        padding: 0;
+        width: 100%;
+    }
+
+    .intro{
+        width: 250px;
+        text-align: center;
+    }
+
+    .search-box input{
+        width: 200px;
+    }
+
+    .buttons-servis{
+        display: flex;
+        gap: 5px;
+    }
+
+     .grid-servicios {
+        justify-content: center;
+    }
+
+     .card {
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .modal-content {
+        width: 200px;
+    }
+
+}

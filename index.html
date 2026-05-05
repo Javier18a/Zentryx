@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="Styles/styles_navbar.css">
     <title>Zentryx</title>
 </head>
 
 <body>
 
-    <aside class="sidebar">
+    <button class="menu-toggle" id="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="overlay" id="overlay"></div>
+    <aside class="sidebar" id="sidebar">
         <div class="logo">
             <img src="" alt="">
             <h1>Zentryx</h1>
@@ -19,7 +24,8 @@
 
         <nav>
             <ul>
-                <li class="active"><a href="#"><i class="fa-solid fa-home"></i> Inicio</a></li>
+                <li class="active"><a href="#"><i class="fa-solid fa-home"></i> Inicio</a></li> 
+                <li><a href="Pages/negocios.html"> <i class="fa-solid fa-building"></i> Negocios e emprendimientos</a></li>
                 <li><a href="Pages/servis.html"><i class="fa-solid fa-briefcase"></i> Servicios</a></li>
                 <li><a href="#acerca"><i class="fa-solid fa-info-circle"></i> Acerca de</a></li>
                 <li><a href="#anuncios"><i class="fa-solid fa-bullhorn"></i> Anuncios</a></li>
@@ -234,6 +240,7 @@
                         <h4>Navegación</h4>
                         <ul>
                             <li><a href="#">Inicio</a></li>
+                            <li><a href="Pages/negocios.html">Negocios e emprendimientos</a></li>
                             <li><a href="Pages/servis.html">Servicios</a></li>
                             <li><a href="#acerca">Acerca de</a></li>
                             <li><a href="#anuncios">Anuncios</a></li>

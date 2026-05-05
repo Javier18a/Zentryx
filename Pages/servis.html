@@ -1,11 +1,178 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="../Styles/servis.css">
+    <link rel="stylesheet" href="../Styles/styles_navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Servicios</title>
 </head>
+
 <body>
-    <h1>Servicios</h1>
+    <button class="menu-toggle" id="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="overlay" id="overlay"></div>
+
+    <aside class="sidebar" id="sidebar">
+        <div class="logo">
+            <img src="" alt="">
+            <h1>Zentryx</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html"><i class="fa-solid fa-home"></i> Inicio</a></li>
+                <li><a href="Pages/negocios.html"><i class="fa-solid fa-building"></i> Negocios e emprendimientos</a>
+                </li>
+                <li class="active"><a href="Pages/servis.html"><i class="fa-solid fa-briefcase"></i> Servicios</a></li>
+                <li><a href="#acerca"><i class="fa-solid fa-info-circle"></i> Acerca de</a></li>
+                <li><a href="#anuncios"><i class="fa-solid fa-bullhorn"></i> Anuncios</a></li>
+                <li><a href="#contactos"><i class="fa-solid fa-envelope"></i> Contactos</a></li>
+                <li><a href="#blog"><i class="fa-solid fa-blog"></i> Blog</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <section class="servicios-page">
+            <div class="container">
+
+                <h1>Explora servicios</h1>
+
+                <p class="intro">
+                    Encuentra servicios ofrecidos por estudiantes en distintas áreas.
+                    Selecciona el que necesitas y contacta directamente con el proveedor.
+                </p>
+
+                <!-- Buscador -->
+                <div class="search-box">
+                    <input type="text" placeholder="Buscar servicios..." />
+                </div>
+
+                <!-- Filtros -->
+                <div class="filtros">
+                    <button class="active">Todos</button>
+                    <button>Diseño</button>
+                    <button>Desarrollo</button>
+                    <button>Edición</button>
+                    <button>Documentación</button>
+                </div>
+
+                <!-- Servicios -->
+                <div class="grid-servicios">
+                    <div class="card" data-categoria="Diseño">
+                        <h3><i class="fas fa-palette"></i> Diseño gráfico</h3>
+                        <p>Logos, branding y contenido visual para redes.</p>
+                        <span class="categoria">Diseño</span>
+                        <div class="buttons-servis">
+                            <button class="ver-mas" data-titulo="🎨 Diseño gráfico"
+                                data-desc="Logos, branding y contenido visual para redes." data-cat="Diseño">
+                                Ver más
+                            </button>
+                            <button>Contactar</button>
+                        </div>
+                    </div>
+
+                    <div class="card" data-categoria="Desarrollo">
+                        <h3><i class="fas fa-code"></i> Desarrollo web</h3>
+                        <p>Páginas modernas y funcionales adaptadas a tu proyecto.</p>
+                        <span class="categoria">Desarrollo</span>
+                        <div class="buttons-servis">
+                            <button class="ver-mas" data-titulo="💻 Desarrollo web"
+                                data-desc="Páginas modernas y funcionales adaptadas a tu proyecto."
+                                data-cat="Desarrollo">
+                                Ver más
+                            </button>
+                            <button>Contactar</button>
+                        </div>
+                    </div>
+
+                    <div class="card" data-categoria="Edición">
+                        <h3><i class="fas fa-video"></i> Edición de video</h3>
+                        <p>Edición profesional para contenido digital.</p>
+                        <span class="categoria">Edición</span>
+                        <div class="buttons-servis">
+                            <button class="ver-mas" data-titulo="🎥 Edición de video"
+                                data-desc="Edición profesional para contenido digital." data-cat="Edición">
+                                Ver más
+                            </button>
+                            <button>Contactar</button>
+                        </div>
+                    </div>
+
+                    <div class="card" data-categoria="Documentación">
+                        <h3><i class="fas fa-file-alt"></i> Documentación técnica</h3>
+                        <p>Informes, manuales y documentación para proyectos.</p>
+                        <span class="categoria">Documentación</span>
+                        <div class="buttons-servis">
+                            <button class="ver-mas" data-titulo="📝 Documentación técnica"
+                                data-desc="Informes, manuales y documentación para proyectos." data-cat="Documentación">
+                                Ver más
+                            </button>
+                            <button>Contactar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+
+                <div class="footer-content">
+
+                    <!-- Marca -->
+                    <div class="footer-brand">
+                        <h3>Zentryx</h3>
+                        <p>Zentryx es un centro de servicios diseñado para conectar necesidades con soluciones reales.
+                            Facilitamos el acceso a talento y promovemos la ejecución de ideas de forma directa y
+                            accesible.</p>
+                    </div>
+
+                    <!-- Navegación -->
+                    <div class="footer-links">
+                        <h4>Navegación</h4>
+                        <ul>
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="Pages/servis.html">Servicios</a></li>
+                            <li><a href="#acerca">Acerca de</a></li>
+                            <li><a href="#anuncios">Anuncios</a></li>
+                            <li><a href="#contactos">Contactos</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contacto -->
+                    <div class="footer-contact">
+                        <h4>Contacto</h4>
+                        <p>Email: noxxity.oficial@gmail.com</p>
+                        <p>Instagram: @noxxiy.oficial</p>
+                    </div>
+
+                </div>
+
+                <div class="footer-bottom">
+                    <p>© 2026 Zentryx. Todos los derechos reservados.</p>
+                </div>
+
+            </div>
+        </footer>
+    </main>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-desc"></p>
+            <p id="modal-cat" class="categoria"></p>
+        </div>
+    </div>
+
+    <script src="../Main/servis.js"></script>
+    <script src="../Main/main.js"></script>
 </body>
+
 </html>

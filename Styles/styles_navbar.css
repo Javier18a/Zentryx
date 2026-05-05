@@ -1,0 +1,58 @@
+/* BOTÓN HAMBURGUESA */
+.menu-toggle {
+  display: none;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: #0f172a;
+  border: none;
+  color: #38bdf8;
+  font-size: 22px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  z-index: 1001;
+  cursor: pointer;
+}
+
+/* MÓVIL */
+@media (max-width: 768px) {
+
+  main {
+    margin: auto;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .sidebar {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 240px;
+    height: 100vh;
+    background: #0f172a;
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  /* Opcional: oscurecer fondo */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+  }
+
+  .overlay.active {
+    display: block;
+  }
+}
