@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="../Styles/negocios.css">
+    <link rel="stylesheet" href="../Styles/styles_navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Negocios</title>
+</head>
+<body>
+
+    <button class="menu-toggle" id="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="overlay" id="overlay"></div>
+
+    <aside class="sidebar" id="sidebar">
+        <div class="logo">
+            <img src="" alt="">
+            <h1>Zentryx</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html"><i class="fa-solid fa-home"></i> Inicio</a></li>
+                <li class="active"><a href="negocios.html"><i class="fa-solid fa-building"></i> Tienda</a></li>
+                <li><a href="servis.html"><i class="fa-solid fa-briefcase"></i> Servicios</a></li>
+                <li><a href="#acerca"><i class="fa-solid fa-info-circle"></i> Acerca de</a></li>
+                <li><a href="#anuncios"><i class="fa-solid fa-bullhorn"></i> Anuncios</a></li>
+                <li><a href="#contactos"><i class="fa-solid fa-envelope"></i> Contactos</a></li>
+                <li><a href="#blog"><i class="fa-solid fa-blog"></i> Blog</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <section class="tienda">
+
+            <!-- HEADER -->
+            <div class="tienda-header">
+                <h1>Espacios de Negocios</h1>
+                <p>Explora emprendimientos creados dentro de la comunidad Zentryx</p>
+            </div>
+
+            <!-- FILTROS -->
+            <div class="filtros">
+                <button class="active">Todos</button>
+                <button>Diseño</button>
+                <button>Desarrollo</button>
+                <button>Marketing</button>
+                <button>Servicios</button>
+            </div>
+
+            <!-- GRID DE NEGOCIOS -->
+            <div class="negocios-grid">
+
+                <!-- NEGOCIO 1 -->
+                <div class="negocio-banner-card" data-categoria="Diseño">
+                    <div class="banner-top"></div>
+                    <div class="contenido">
+                        <div class="logo-container">
+                            <img src="Imgs/logo1.png" alt="">
+                        </div>
+                        <div class="info-ng">
+                            <h2>Studio Creativo</h2>
+                            <p>Branding, diseño gráfico y contenido visual para marcas modernas.</p>
+                            <div class="botones">
+                                <button class="btn-primary">Explorar</button>
+                                <button class="btn-secondary">Contactar</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="modal" id="modalNegocio">
+
+                        <div class="modal-content">
+
+                            <!-- Botón cerrar -->
+                            <span class="cerrar" id="cerrarModal">&times;</span>
+
+                            <!-- INFO -->
+                            <div class="modal-info">
+                                <h2>Studio Creativo</h2>
+                                <p>
+                                    Ofrecemos servicios de branding, diseño gráfico y contenido visual.
+                                    Ayudamos a marcas a crecer con identidad moderna.
+                                </p>
+                            </div>
+
+                            <!-- GALERÍA -->
+                            <div class="galeria">
+                                <img src="Imgs/p1.jpg" alt="">
+                                <img src="Imgs/p2.jpg" alt="">
+                                <img src="Imgs/p3.jpg" alt="">
+                                <img src="Imgs/p4.jpg" alt="">
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- CTA -->
+            <div class="cta-negocios">
+                <h2>¿Tienes un emprendimiento?</h2>
+                <p>Forma parte del ecosistema de Zentryx y muestra tu negocio</p>
+                <button>Crear mi espacio</button>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="../Main/main.js"></script>
+    <script src="../Main/negocio.js"></script>
+
+
+</body>
+</html>

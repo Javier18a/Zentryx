@@ -24,8 +24,8 @@
 
         <nav>
             <ul>
-                <li class="active"><a href="#"><i class="fa-solid fa-home"></i> Inicio</a></li> 
-                <li><a href="Pages/negocios.html"> <i class="fa-solid fa-building"></i> Negocios e emprendimientos</a></li>
+                <li class="active"><a href="#"><i class="fa-solid fa-home"></i> Inicio</a></li>
+                <li><a href="Pages/negocios.html"> <i class="fa-solid fa-building"></i> Tienda</a> </li>
                 <li><a href="Pages/servis.html"><i class="fa-solid fa-briefcase"></i> Servicios</a></li>
                 <li><a href="#acerca"><i class="fa-solid fa-info-circle"></i> Acerca de</a></li>
                 <li><a href="#anuncios"><i class="fa-solid fa-bullhorn"></i> Anuncios</a></li>
@@ -42,7 +42,10 @@
             <h1>Bienvenido a <span style="color: #38bdf8; font-family: 'Times New Roman', Times, serif;">Zentryx</span>
             </h1>
             <p>Tu solución en la nueva era digital.</p>
-            <a href="Pages/servis.html">Ver Servicios</a>
+            <div class="redirection">
+                <a href="Pages/negocios.html">Tienda</a>
+                <a href="Pages/servis.html">Ver Servicios</a>
+            </div>
         </div>
 
         <section class="zentryx-info">
@@ -167,7 +170,7 @@
             </div>
         </section>
 
-        <section class="servicios">
+        <section class="servicios" id="servicios">
             <div class="container">
 
                 <h2>Servicios destacados</h2>
@@ -183,13 +186,13 @@
                     <div class="card">
                         <h3><i class="fa-solid fa-palette"></i> Diseño gráfico</h3>
                         <p>Creación de logos, banners y contenido visual para redes o proyectos personales.</p>
-                        <button>Contactar</button>
+                        <button onclick="location.href='Pages/servis.html'">Ver servicio</button>
                     </div>
 
                     <div class="card">
                         <h3><i class="fa-solid fa-laptop-code"></i> Desarrollo web</h3>
                         <p>Diseño y desarrollo de páginas modernas, funcionales y adaptadas a cada necesidad.</p>
-                        <button>Contactar</button>
+                        <button onclick="location.href='Pages/servis.html'">Ver servicio</button>
                     </div>
 
                     <div class="card">
@@ -198,7 +201,7 @@
                             Elaboración de documentación técnica, informes, manuales y guías para proyectos
                             académicos o sistemas, asegurando claridad y buena estructura.
                         </p>
-                        <button>Contactar</button>
+                        <button onclick="location.href='Pages/servis.html'">Ver servicio</button>
                     </div>
                 </div>
             </div>
@@ -215,8 +218,8 @@
                 </p>
 
                 <div class="botones">
-                    <button class="btn-primary">Explorar servicios</button>
-                    <button class="btn-secondary">Publicar servicio</button>
+                    <button class="btn-primary" onclick="location.href='Pages/servis.html'">Explorar servicios</button>
+                    <button class="btn-secondary" onclick="location.href='Pages/publicar-servicio.html'">Publicar servicio</button>
                 </div>
 
             </div>
@@ -240,7 +243,7 @@
                         <h4>Navegación</h4>
                         <ul>
                             <li><a href="#">Inicio</a></li>
-                            <li><a href="Pages/negocios.html">Negocios e emprendimientos</a></li>
+                            <li><a href="Pages/negocios.html">Tienda</a></li>
                             <li><a href="Pages/servis.html">Servicios</a></li>
                             <li><a href="#acerca">Acerca de</a></li>
                             <li><a href="#anuncios">Anuncios</a></li>
